@@ -60,7 +60,7 @@
 .settings-menu button[aria-pressed="true"],
 .settings-menu button[aria-checked="true"] {
   background: var(--accent-2-soft);
-  color: var(--text);
+  color: var(--accent-2);
 }
 
 .settings-menu button:disabled {

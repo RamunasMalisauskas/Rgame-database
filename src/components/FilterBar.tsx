@@ -75,7 +75,6 @@ export function FilterBar({
             <div className="settings-menu" role="menu">
               <button
                 type="button"
-                className="btn btn-primary"
                 role="menuitemcheckbox"
                 aria-checked={dark}
                 onClick={() => {
@@ -88,7 +87,6 @@ export function FilterBar({
               </button>
               <button
                 type="button"
-                className="btn btn-primary"
                 role="menuitem"
                 aria-pressed={editingLocations}
                 disabled={!canEditLocations}
