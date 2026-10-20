@@ -5,7 +5,7 @@ import {
   explainWriteError,
   updateGame,
   updateTag,
-} from './lib/api.ts'
+} from './api.ts'
 import {
   columnsFromGames,
   isPreordered,
@@ -14,8 +14,8 @@ import {
   splitTags,
   textOf,
   type ColumnRoles,
-} from './lib/games.ts'
-import type { ColumnSource, Game } from './types.ts'
+} from './games.ts'
+import type { ColumnSource, Game } from '../types.ts'
 
 export type Panel =
   | { mode: 'closed' }

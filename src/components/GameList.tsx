@@ -1,5 +1,5 @@
 import { GameCard } from "./GameCard.tsx";
-import { gameKey } from "../gameFunctions.ts";
+import { gameKey } from "../lib/gameFunctions.ts";
 import {
   sectionId,
   type ColumnRoles,
