@@ -38,8 +38,8 @@ export function GameCard({
         <span className="card-title">{title}</span>
         {ratingColumn && !unplayed ? (
           <span className="card-rating">
-            <span className="card-rating-label">{labelFor(ratingColumn)}</span>
             <span className="rating-pill">{rating || "—"}</span>
+            <span className="card-rating-label">{labelFor(ratingColumn)}</span>
           </span>
         ) : null}
         {pills.length > 0 ? (
