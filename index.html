@@ -10,6 +10,9 @@
         if (localStorage.getItem("theme") === "light") {
           document.documentElement.dataset.theme = "light";
         }
+        if (localStorage.getItem("view") === "list") {
+          document.documentElement.dataset.view = "list";
+        }
       } catch (error) {}
     </script>
   </head>

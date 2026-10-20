@@ -42,7 +42,7 @@ The sidebar searches the library and filters it. The main area groups games by l
 - Click a card to open it. **Edit** on the card opens the same dialog ready to change. Save writes the row back to the sheet. Delete removes that row.
 - **Played** and **Willing to sell** are Yes, No, or blank.
 - A game marked willing to sell shows a `willing to sell` pill. A game marked not played shows `unplayed`, and its rating stays off the card. Preordered games also hide the rating. The rating is still there in the dialog.
-- **Settings**, under Add game, has **Turn on lights** / **Turn off lights**. The choice is remembered in this browser. **Edit locations** puts an Edit button under each location. Renaming updates the location of every game in that section. Renaming Preordered also clears the `preordered` tag so those games follow the new name.
+- **Settings**, under Add game, has **Turn on lights** / **Turn off lights**. The choice is remembered in this browser. **Edit locations** puts an Edit button under each location. **Show as list** stacks each game in a row; **Show as cards** brings the grid back. That choice is remembered too. Renaming updates the location of every game in that section. Renaming Preordered also clears the `preordered` tag so those games follow the new name.
 
 Locations the app already knows:
 

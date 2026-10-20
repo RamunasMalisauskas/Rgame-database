@@ -220,6 +220,48 @@
   margin-top: auto;
 }
 
+:root[data-view="list"] .grid {
+  grid-template-columns: 1fr;
+  gap: 0.375rem;
+}
+
+:root[data-view="list"] .game-card {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+}
+
+:root[data-view="list"] .card-open {
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 0;
+  gap: 0.625rem;
+}
+
+:root[data-view="list"] .card-title {
+  /* flex: 1 1 12rem; */
+  font-size: 1rem;
+}
+
+:root[data-view="list"] .card-rating,
+:root[data-view="list"] .card-pills {
+  width: auto;
+  flex: none;
+}
+
+:root[data-view="list"] .card-edit {
+  align-self: center;
+  margin-top: 0;
+}
+
+:root[data-view="list"] .card.skeleton {
+  height: 2.75rem;
+  min-height: 2.75rem;
+}
+
 .card.skeleton {
   height: 148px;
   min-height: 148px;

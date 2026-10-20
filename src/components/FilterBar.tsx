@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { sectionId, type LocationGroup } from "../lib/games.ts";
 import { applyTheme, currentTheme } from "../lib/theme.ts";
+import { applyView, currentView } from "../lib/view.ts";
 
 type FilterBarProps = {
   query: string;
@@ -36,6 +37,7 @@ export function FilterBar({
   onEditLocation,
 }: FilterBarProps) {
   const [dark, setDark] = useState(() => currentTheme() === "dark");
+  const [list, setList] = useState(() => currentView() === "list");
 
   return (
     <aside className="sidebar">
@@ -123,6 +125,17 @@ export function FilterBar({
             onClick={onToggleLocationEdit}
           >
             Edit locations
+          </button>
+          <button
+            type="button"
+            className="btn secondary sm"
+            onClick={() => {
+              const next = list ? "cards" : "list";
+              applyView(next);
+              setList(next === "list");
+            }}
+          >
+            {list ? "Show as cards" : "Show as list"}
           </button>
         </div>
       </div>
